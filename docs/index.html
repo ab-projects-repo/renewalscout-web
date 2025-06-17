@@ -1,25 +1,268 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title> - </title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>RenewalScout - Never Miss a Contract Renewal Again</title>
+    <meta name="description" content="Never miss a contract renewal again. Simple tracking for €29/month. Get alerts 90, 30, and 7 days before expiry.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --primary: #3b82f6;
+        --primary-dark: #2563eb;
+        --text-primary: #1e293b;
+        --text-secondary: #64748b;
+        --bg-light: #f8fafc;
+        --border: #e2e8f0;
+        --max-width: 1200px;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: var(--text-primary);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(180deg, #ffffff 0%, var(--bg-light) 100%);
+        padding: 120px 20px 100px;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+      }
+      
+      .hero-content {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      
+      h1 {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, var(--text-primary) 0%, #334155 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        margin-bottom: 40px;
+        font-weight: 400;
+      }
+      
+      /* Email Form */
+      .email-form {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+      
+      form {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      input[type="email"] {
+        flex: 1;
+        min-width: 280px;
+        padding: 16px 20px;
+        font-size: 16px;
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        font-family: inherit;
+        transition: border-color 0.2s;
+      }
+      
+      input[type="email"]:focus {
+        outline: none;
+        border-color: var(--primary);
+      }
+      
+      button {
+        padding: 16px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: inherit;
+        white-space: nowrap;
+      }
+      
+      button:hover {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+      
+      .form-note {
+        font-size: 14px;
+        color: var(--text-secondary);
+      }
+      
+      /* Features Section */
+      .features {
+        padding: 80px 20px;
+      }
+      
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+      
+      .feature {
+        text-align: center;
+        padding: 40px 30px;
+        background: var(--bg-light);
+        border-radius: 16px;
+        transition: transform 0.2s;
+      }
+      
+      .feature:hover {
+        transform: translateY(-4px);
+      }
+      
+      .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      
+      .feature h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      
+      .feature p {
+        color: var(--text-secondary);
+        line-height: 1.8;
+      }
+      
+      /* CTA Section */
+      .cta-section {
+        background: var(--bg-light);
+        padding: 60px 20px;
+        text-align: center;
+        border-top: 1px solid var(--border);
+      }
+      
+      .cta-section h2 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+      }
+      
+      .cta-section p {
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+      }
+      
+      /* Responsive */
+      @media (max-width: 640px) {
+        .hero {
+          padding: 80px 20px 60px;
+        }
+        
+        form {
+          flex-direction: column;
+        }
+        
+        input[type="email"] {
+          min-width: 100%;
+        }
+        
+        button {
+          width: 100%;
+        }
+        
+        h2 {
+          font-size: 2rem;
+        }
+        
+        .feature {
+          padding: 30px 20px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="hero">
-  <h1>Never Miss a Contract Renewal Again</h1>
-  <p>Simple tracking for €29/month. No complex features. Just alerts that work.</p>
-  
-  <form action="https://formspree.io/f/xgvyzeqz" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required="" />
-    <button type="submit">Get Early Access</button>
-  </form>
-  
-  <div class="benefits">
-    <div>✓ Upload contracts, we extract dates</div>
-    <div>✓ Get alerts 90/30/7 days before expiry</div>
-    <div>✓ Simple dashboard, no training needed</div>
+  <div class="hero-content">
+    <h1>Never Miss a Contract Renewal Again</h1>
+    <p class="subtitle">Stop losing money on forgotten renewals. Simple contract tracking that actually works.</p>
+    
+    <div class="email-form">
+      <form action="https://formspree.io/f/xgvyzeqz" method="POST">
+        <input type="email" name="email" placeholder="Enter your work email" required="" />
+        <button type="submit">Get Early Access</button>
+      </form>
+      <p class="form-note">Be first to know when we launch in February 2025</p>
+    </div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="container">
+    <h2>Finally, contract management that doesn't suck</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">📅</div>
+        <h3>Smart Alerts</h3>
+        <p>Get notified 90, 30, and 7 days before any contract expires. Never get surprised again.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚀</div>
+        <h3>Dead Simple</h3>
+        <p>Upload contracts, we extract the dates. No complex features you'll never use.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💶</div>
+        <h3>Fair Pricing</h3>
+        <p>Just €29/month flat rate. No per-user fees, no hidden costs, no surprises.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="container">
+    <h2>Join 100+ businesses saving thousands on renewals</h2>
+    <p>Early access starts February 2025</p>
   </div>
 </div>
 
