@@ -12,7 +12,7 @@ title: RenewalScout - Never Miss a Contract Renewal Again
         <input type="email" name="email" placeholder="Enter your work email" required>
         <button type="submit">Get Early Access</button>
       </form>
-      <p class="form-note">Be first to know when we launch in February 2025</p>
+      <p class="form-note">Be first to know when we launch in July 2025</p>
     </div>
   </div>
 </div>
@@ -43,6 +43,6 @@ title: RenewalScout - Never Miss a Contract Renewal Again
 <div class="cta-section">
   <div class="container">
     <h2>Join 100+ businesses saving thousands on renewals</h2>
-    <p>Early access starts February 2025</p>
+    <p>Early access starts July 2025</p>
   </div>
 </div>
