@@ -2,7 +2,7 @@
 layout: post
 title: "Contract Renewal Tracking Without Breaking the Bank"
 description: "Learn how to track contract renewals effectively using free and affordable tools, from spreadsheets to software under $50/month"
-date: 2025-02-21 08:00:00 -0200
+date: 2025-07-18 08:00:00 -0200
 author: Klavs
 permalink: /blog/contract-renewal-tracking-without-breaking-the-bank/
 ---
