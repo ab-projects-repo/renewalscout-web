@@ -14,6 +14,10 @@ title: RenewalScout - Never Miss a Contract Renewal Again
       </form>
       <p class="form-note">Be first to know when we launch in August 2025</p>
     </div>
+    
+    <p class="blog-link">
+      <a href="/blog">📚 Read our blog for contract management tips</a>
+    </p>
   </div>
 </div>
 
