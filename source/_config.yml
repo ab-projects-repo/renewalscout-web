@@ -1,5 +1,5 @@
 destination: "D:/Projects/wamp64/www/renewalscout-web/docs"
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "RenewalScout" # the name of your site, e.g. ACME Corp.
+url: "https://renewalscout.com" # the base hostname & protocol for your site, e.g. http://example.com
